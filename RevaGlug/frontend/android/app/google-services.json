@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "140321630139",
+    "project_id": "revaglug-d8d5b",
+    "storage_bucket": "revaglug-d8d5b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140321630139:android:f9a409c71d0a6a096c869e",
+        "android_client_info": {
+          "package_name": "com.example.reva_glug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-kFv7hUSQYTo1RXs8SFOBwRUKslYcMj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140321630139:android:4cfa43e60bcbd4816c869e",
+        "android_client_info": {
+          "package_name": "com.glugandrobotics.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-kFv7hUSQYTo1RXs8SFOBwRUKslYcMj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
