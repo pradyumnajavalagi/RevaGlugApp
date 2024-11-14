@@ -7,13 +7,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:reva_glug/main.dart';
+import 'package:reva_glug/core/user/src/firebase_user_repo.dart';
+import 'package:reva_glug/myapp/app.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget( MyApp(FirebaseUserRepo()));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

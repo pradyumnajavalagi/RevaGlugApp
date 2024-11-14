@@ -1,27 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'modules/auth/view/splash_screen.dart';
+import 'core/user/src/firebase_user_repo.dart';
+import 'myapp/app.dart';
+import 'simple_bloc_observer.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'REVA Glug App',
-      routes: {
-        '/': (context) => const SplashScreen(),
-        '/login': (context) => const SplashScreen(),
-        '/home': (context) => const SplashScreen(),
-      },
-    );
-  }
+	WidgetsFlutterBinding.ensureInitialized();
+	await Firebase.initializeApp();
+	Bloc.observer = SimpleBlocObserver();
+  runApp(MyApp(FirebaseUserRepo()));
 }
